@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In and Sign Up</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Macondo', cursive;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            margin-top: 80px;
+        }
+
+        .leftcontainer {
+            background-color: white;
+            width: 284;
+            height: 480;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: cent;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        .con-signin {
+            width: 420px;
+            height: 480px;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head_signin {
+            width: 118px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .use_your_email {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .fillbox {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        input[type=email],
+        input[type=password] {
+            width: 284px;
+            height: 20px;
+            margin: 8px 0;
+            padding: 12px 15px;
+            background-color: #f1e5e7;
+            border: none;
+        }
+
+        /* ::placeholder {
+            color: red;
+        } */
+
+        .forget {
+            width: 200px;
+            height: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+
+        .snbt {
+            display: flex;
+            width: 143px;
+            height: 40px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            background-color: #FF4B2B;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .snbt:hover {
+            background-color: #FF4B2B;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+
+
+        .rightcontainer {
+            background-color: #FF4362;
+            width: 50%;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .con-signup {
+            width: 304px;
+            height: 200px;
+            padding: 0 40px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: white;
+
+        }
+
+        .con-signup>h1 {
+            width: 225px;
+            height: 40px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .con-signup>p {
+            width: 304px;
+            height: 40px;
+            margin: 20px 0 30px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        .con-signup>button {
+            width: 150px;
+            height: 40px;
+            padding: 12px 45px;
+            border-radius: 50px;
+            border: white solid 1px;
+            background-color: transparent;
+            color: white;
+        }
+
+        .con-signup>button:hover {
+            cursor: pointer;
+            background-color: #ec1539;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            font-size: 20px;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        footer {
+            margin: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftcontainer">
+            <div class="con-signin">
+                <div class="head_signin">
+                    <h1>Sign in</h1>
+                </div>
+                <div class="use_your_email">Use your email
+                    <section class="fillbox">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                    </section>
+                </div>
+                <a class="forget" href="#">Forgot your password?</a>
+                <button class="snbt">SIGN IN</button>
+            </div>
+        </div>
+        <div class="rightcontainer">
+            <div class="con-signup">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button type="signup">SIGN UP</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<footer>Created by Wannasin Chawkamket</footer>
+
+</html>
